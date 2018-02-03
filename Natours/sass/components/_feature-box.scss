@@ -1,0 +1,19 @@
+.feature-box {
+    background-color: rgba($color-white, .8);
+    font-size: 1.2rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: $default-shadow;
+    transition: transition 3s;
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+    &__icon {
+        font-size: 5rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        @include gradient-font;
+    }
+    &__text {}
+}

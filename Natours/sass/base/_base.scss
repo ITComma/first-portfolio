@@ -1,0 +1,27 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+RESET (UDEMY - ADVANCED CSS & SASS)
+* * * * * * * * * * * * * * * * * * * * * * * * * */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /*---- root element ----*/
+    /*
+    We can use fixed font-size with pixel but it's not best practise
+    because use can change there font-size browser as they want when zoom in view port
+    when they change browser's font-size, it will not effect to our design cause we use fixed value 
+    font-size: 10px;
+     */
+    font-size: 62.5%;
+}
+
+body {
+    padding: 3rem;
+    box-sizing: border-box;
+}
