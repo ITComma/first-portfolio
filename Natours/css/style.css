@@ -158,8 +158,12 @@ STYLE FOR SPECIFIC HOME PAGE
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 25rem 0 10rem 0;
   margin-top: -15rem; }
+
+.section-stories {
+  padding: 5rem 0 15rem 0;
+  background-color: #f7f7f7; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -375,6 +379,54 @@ STYLE FOR SPECIFIC HOME PAGE
   .card__price-value {
     font-size: 6rem;
     font-weight: 300; }
+
+.story {
+  width: 75%;
+  margin: 10rem auto 5rem auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.4rem;
+  transform: skew(-7deg); }
+  .story__shape {
+    width: 12rem;
+    height: 12rem;
+    float: left;
+    background-color: #eee;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skew(7deg); }
+  .story__img {
+    height: 100%;
+    transition: all .5s;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden; }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story__text {
+    transform: skew(7deg); }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(-4rem) scale(1);
+    backface-visibility: hidden;
+    -webkit-filter: blur(3px) brightness(80%);
+    filter: blur(3px) brightness(80%); }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * *
 HEADER SECTION
