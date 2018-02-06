@@ -14,6 +14,6 @@ These projects are created in front-end stack, with modern responsive design, CS
 > - [Trillo Website](https://itcomma.github.io/first-portfolio/Trillo/)
 
 # Status
-> - Natours (50% done)
+> - Natours (80% done)
 > - Nexters (1% done)
 > - Trillo (1% done)
