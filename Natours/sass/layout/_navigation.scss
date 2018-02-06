@@ -1,0 +1,124 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        background-color: $color-white;
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        top: 4.25rem;
+        right: 3.76rem;
+        border-radius: 50%;
+        z-index: 200;
+        box-shadow: $default-shadow;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__icon {
+        position: relative;
+        margin-top: 3rem;
+        &,
+        &::before,
+        &::after {
+            display: inline-block;
+            width: 3rem;
+            height: 2px;
+            background-color: $color-gray-dark-3;
+            transition: all .2s;
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+        &::before {
+            top: -1rem;
+        }
+        &::after {
+            top: 1rem;
+        }
+    }
+    &__background {
+        /*---- at the beginning, the background will hide beside the navigation button ----*/
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 4.5rem;
+        right: 4rem;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        z-index: 100;
+        transition: transform .6s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 150;
+        opacity: 0;
+        width: 0;
+        transition: all .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    &__list {
+        @include center-horizontal-vertical;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+    &__item {
+        margin: 1.5rem;
+    }
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 300;
+            padding: .6rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 220%;
+            transition: all .4s;
+            span {
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+    }
+    &__button:hover &__icon::before {
+        top: -1.2rem;
+    }
+    &__button:hover &__icon::after {
+        top: 1.2rem;
+    }
+    &__checkbox:checked~&__background {
+        /*---- when click the navigation button, the background will scale out the whole viewport ----*/
+        transform: scale(80);
+    }
+    &__checkbox:checked~&__nav {
+        opacity: 1;
+        width: 100%;
+    }
+    &__checkbox:checked+&__button &__icon {
+        background-color: transparent;
+    }
+    &__checkbox:checked+&__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked+&__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
