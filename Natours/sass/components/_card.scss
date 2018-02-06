@@ -40,6 +40,15 @@
             &-3 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
+            &-4 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            &-5 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            &-6 {
+                background-image: linear-gradient(to right bottom, #EB94FF, #E80C98);
+            }
         }
     }
     &:hover &__side--front {
@@ -71,6 +80,15 @@
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
         }
+        &--4 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/logo-white.png);
+        }
+        &--5 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../../../Nexter/img/logo.png);
+        }
+        &--6 {
+            background-image: linear-gradient(to right bottom, #EB94FF, #E80C98), url(../../../Trillo/img/logo.png);
+        }
     }
     &__heading {
         font-size: 2.3rem;
@@ -96,6 +114,15 @@
         }
         &--3 {
             background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .95), rgba( $color-tertiary-dark, .95));
+        }
+        &--4 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .95), rgba( $color-primary-dark, .95));
+        }
+        &--5 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .95), rgba( $color-secondary-dark, .95));
+        }
+        &--6 {
+            background-image: linear-gradient(to right bottom, rgba(#FF46F9, .95), rgba( #EB00FF, .95));
         }
     }
     &__details {

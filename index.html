@@ -1,13 +1,137 @@
 <html>
-  <head>
+
+<head>
     <!-- add script to redirect the default index.html of gitpage to webpage/index.html -->
     <script>
-      if (window.location.href.indexOf('https://itcomma.github.io') === 0) {
-        window.location.href = 'https://itcomma.github.io/first-portfolio/Natours/';
-      }
+        if (window.location.href.indexOf('https://itcomma.github.io') === 0) {
+            window.location.href = 'https://itcomma.github.io/first-portfolio/Natours/';
+        }
     </script>
-    <link rel="canonical" href="https://itcomma.github.io/first-portfolio/Natours/"/>
-  </head>
-  <body>
-  </body>
+    <link rel="canonical" href="https://itcomma.github.io/first-portfolio/Natours/" />
+
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="natours/css/style.css">
+
+    <!-- internal stylesheet -->
+    <style>
+        .home__img {
+            position: absolute;
+            width: 20%;
+            top: -30px;
+            left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="home__img" src="images/itcomma.png" alt="itcomma logo">
+    <!--*************************************************
+            PROJECTS SECTION
+        *************************************************-->
+    <section style="background-color:#fff" class="section-tours">
+        <div class="u-center-text u-margin-bottom-medium">
+            <h2 class="heading-secondary">
+                Portfolio Projects
+            </h2>
+        </div>
+
+        <div class="row" id="section-tours-details">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--4">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--4">
+                                    Natours
+                                </span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>First project</li>
+                                <li>Front-End stack</li>
+                                <li>Modern style</li>
+                                <li>Responsive design</li>
+                                <li>Status (80% done)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-4">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-only">&nbsp;</p>
+                                <p class="card__price-value">&nbsp;</p>
+                            </div>
+                            <a href="https://itcomma.github.io/first-portfolio/Natours/" class="btn btn--white">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--5">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--5">
+                                        Nexter
+                                </span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>Second project</li>
+                                <li>Status (1% done)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-5">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-only">&nbsp;</p>
+                                <p class="card__price-value">&nbsp;</p>
+                            </div>
+                            <a href="https://itcomma.github.io/first-portfolio/Nexter/" class="btn btn--white">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--6">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--6">
+                                        Trillo
+                                 </span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>Third project</li>
+                                <li>Status (1% done)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-6">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price-only">&nbsp;</p>
+                                <p class="card__price-value">&nbsp;</p>
+                            </div>
+                            <a href="https://itcomma.github.io/first-portfolio/Trillo/" class="btn btn--white">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+            <a href="https://github.com/ITComma/first-portfolio" class="btn btn--primary">Back to source code</a>
+        </div>
+    </section>
+</body>
+
 </html>
