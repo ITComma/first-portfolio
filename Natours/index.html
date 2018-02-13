@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
     <!-- css external references -->
-    <link rel="stylesheet" href="css/icon-font.css">
+    <!--<link rel="stylesheet" href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,11 +25,26 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>01</span>About Natours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>02</span>Your Benefits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>03</span>Popular Tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>04</span>Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>05</span>Book Now</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -77,9 +92,14 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="photo 1" class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="photo 2" class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="photo 3" class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
+
+                        <!-- <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -185,7 +205,7 @@
                             </div>
                             <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--2">
-                                        The Forest Hiker
+                                    The Forest Hiker
                                 </span>
                             </h4>
                             <div class="card__details">
@@ -217,8 +237,8 @@
                             </div>
                             <h4 class="card__heading">
                                 <span class="card__heading-span card__heading-span--3">
-                                        The Snow Adventurer
-                                 </span>
+                                    The Snow Adventurer
+                                </span>
                             </h4>
                             <div class="card__details">
                                 <ul>
@@ -256,8 +276,7 @@
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
-                    <source src="img/video.webm" type="video/webm">
-                    Your browser is not supported!
+                    <source src="img/video.webm" type="video/webm"> Your browser is not supported!
                 </video>
             </div>
 
@@ -279,7 +298,8 @@
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed laudantium asperiores fugiat id vel nulla officiis quod accusamus ad corrupti commodi illo quia, doloremque porro facilis iure enim modi! Lorem ipsum dolor
-                            sit amet, consectetur adipisicing elit. Corporis iure doloremque reprehenderit.</p>
+                            sit amet, consectetur adipisicing elit. Corporis iure doloremque reprehenderit.
+                        </p>
                     </div>
                 </div>
 
@@ -340,7 +360,7 @@
                                 <div class="form__radio-group">
                                     <input type="radio" class="form__radio-input" id="large" name="size">
                                     <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
+                                        <span class="form__radio-button"></span>
                                         Large tour group
                                     </label>
                                 </div>
@@ -361,7 +381,10 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            <picture class="footer_logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo" src="img/logo-green-2x.png">
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">
