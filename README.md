@@ -15,5 +15,5 @@ These projects are created in front-end stack, with modern responsive design, CS
 
 # Status
 > - Natours (100% done)
-> - Nexters (1% done)
+> - Nexters (100% done)
 > - Trillo (100% done)
